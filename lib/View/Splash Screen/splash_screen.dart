@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:travel_app/Controller/mediaquery_controller.dart';
 
@@ -7,6 +8,9 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Future.delayed(const Duration(seconds: 3),(){
+      return Get.toNamed("Onboarding");
+    });
     return Scaffold(
       backgroundColor: const Color.fromRGBO(13, 110, 253, 1),
       body: Center(
