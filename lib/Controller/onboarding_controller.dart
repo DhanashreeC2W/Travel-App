@@ -1,42 +1,32 @@
 import 'package:get/get.dart';
 
+/// ONBOARDING CONTROLLER FOR MANAGING STATE
 class OnboardingController extends GetxController {
+  /// OBSERVABLE VARIABLE TO TRACK CURRENT PAGE
   var currentPage = 0.obs;
 
+  /// LIST OF ONBOARDING CONTENTS
   List onboardingContentsList = [
     {
-      "onboardingimageUrl": "assets/svg/images/onboarding/onboarding1.svg",
-      "onboardingheadLine": "Life is short and the world is wide",
+      "onboardingimageUrl": "assets/images/onboarding1.png",
+      "onboardingheadLine": "Life is short and the world is ",
       "onboardingDescription":
-          "At Friends tours and travel, we customize reliable and trut worthy educational tours to destinations",
+          "At Friends tours and travel, we customize reliable and trustworthy educational tours to destinations",
+      "richText": "wide"
     },
     {
-      "onboardingimageUrl": "assets/svg/images/onboarding/onboarding2.svg",
-      "onboardingheadLine": "It’s a big world out there go explore",
+      "onboardingimageUrl": "assets/images/onboarding2.png",
+      "onboardingheadLine": "It’s a big world out there go ",
       "onboardingDescription":
-          "To get the best of your adventure you just need to leave and go where you like. we are waiting for you",
+          "To get the best of your adventure you just need to leave and go where you like. We are waiting for you.",
+      "richText": "explore"
     },
     {
-      "onboardingimageUrl": "assets/svg/images/onboarding/onboarding2.svg",
-      "onboardingheadLine": "People don’t take trips, trips take people",
+      "onboardingimageUrl": "assets/images/onboarding3.png",
+      "onboardingheadLine": "People don’t take trips, trips take ",
       "onboardingDescription":
-          "To get the best of your adventure you just need to leave and go where you like. we are waiting for you",
+          "To get the best of your adventure you just need to leave and go where you like. We are waiting for you.",
+      "richText": "people"
     },
   ];
-
-  /// FUNCTION TO MOVE TO NEXT PAGE
-  void nextPage() {
-    if (currentPage.value < 2) {
-      currentPage.value++;
-    } else {
-      Get.toNamed('home');
-    }
-  }
-
-  /// FUNCTION TO MOVE TO PREVIOUS PAGE
-  void previousPage() {
-    if (currentPage.value > 0) {
-      currentPage.value--;
-    }
-  }
 }

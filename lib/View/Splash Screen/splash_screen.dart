@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:travel_app/Controller/mediaquery_controller.dart';
+import 'package:travel_app/Controller/size_controller.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -17,7 +17,7 @@ class SplashScreen extends StatelessWidget {
         child: Text(
           "Travenor",
           style: GoogleFonts.aclonica(
-            fontSize: MediaqueryController().screenHeight(context) * 0.036,
+            fontSize: SizeController().screenHeight(context) * 0.036,
             color: const Color.fromRGBO(255, 255, 255, 1),
           ),
         ),
