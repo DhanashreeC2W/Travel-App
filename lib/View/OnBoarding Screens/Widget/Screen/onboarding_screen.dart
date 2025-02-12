@@ -3,7 +3,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:travel_app/Controller/onboarding_controller.dart';
-import 'package:travel_app/View/OnBoarding%20Screens/Widget/onboarding_widget.dart';
+import 'package:travel_app/view/OnBoarding%20Screens/Widget/onboarding_widget.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});

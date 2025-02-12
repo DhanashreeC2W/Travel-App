@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:travel_app/Controller/onboarding_controller.dart';
 import 'package:travel_app/Controller/size_controller.dart';
-import 'package:travel_app/View/Sign%20in/up%20Screens/sign_in_screen.dart';
+import 'package:travel_app/view/Sign%20in/up%20Screens/sign_in_screen.dart';
 
 /// ONBOARDING WIDGET FOR INDIVIDUAL PAGES
 class OnboardingWidget extends StatelessWidget {

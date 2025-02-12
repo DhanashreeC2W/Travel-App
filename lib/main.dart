@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app/View/OnBoarding%20Screens/Widget/Screen/onboarding_screen.dart';
-import 'package:travel_app/View/Sign%20in/up%20Screens/sign_in_screen.dart';
-import 'package:travel_app/View/Splash%20Screen/splash_screen.dart';
+import 'package:travel_app/view/OnBoarding%20Screens/Widget/Screen/onboarding_screen.dart';
 import 'package:get/get.dart';
 
-import 'View/Home Screen/home_screen.dart';
+import 'view/Home Screen/home_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -23,7 +21,7 @@ class MainApp extends StatelessWidget {
         "Onboarding": (context) => const OnboardingScreen()
       },
       debugShowCheckedModeBanner: false,
-      home: const SignInScreen(),
+      home: const HomeScreen(),
     );
   }
 }
